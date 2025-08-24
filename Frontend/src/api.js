@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || 'https://bm-assignment.onrender.com';
+const API = import.meta.env.VITE_API_URL || 'https://bm-assignment-1.onrender.com';
 
 async function handle(r) {
   if (!r.ok) {
