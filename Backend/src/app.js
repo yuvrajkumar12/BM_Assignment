@@ -45,7 +45,10 @@ app.use(express.json({ limit: '2mb' }));
 // CORS setup
 const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || '*';
 app.use(cors({
-  origin: CLIENT_ORIGIN,
+  origin: [
+    "http://localhost:5173", 
+    "https://frontendbm.onrender.com"   // allow live frontend
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
