@@ -15,8 +15,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build', // build folder
+    outDir: 'dist', // ✅ GitHub Pages dist dhundhta hai
   },
-  base: '/BM_Assignment/', // <-- repo ka naam
+  base: '/BM_Assignment/', // ✅ repo ka naam
 })
+
 
