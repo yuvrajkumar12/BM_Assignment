@@ -1,13 +1,14 @@
 {
-  "homepage": "https://your-username.github.io/BM_Assignment",
+  "homepage": "https://your-username.github.io/BM_Assignment/",
   "name": "frontend",
   "version": "1.0.0",
   "private": true,
-"scripts": {
-  "build": "vite build",
-  "deploy": "gh-pages -d dist"
-}
-,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "node": "^24.6.0",
     "react": "^18.3.1",
